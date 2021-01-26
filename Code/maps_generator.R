@@ -35,7 +35,7 @@ pic <- lay.fundation(x)
 # It save the image with the name specifying the parameters.
 filename <- map.par %>% 
     str_c(., collapse = "-") %>% 
-    str_c("scrawl_red", ., ".tiff", collapse = "")
+    str_c("map_", ., ".tiff", collapse = "")
 
 
 ggsave(
